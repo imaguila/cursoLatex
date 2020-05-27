@@ -36,6 +36,8 @@ Un documento escrito en LaTeX tiene esta pinta\footnote{Este ejemplo
 
 %%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{lstlisting}[language={[latex]tex}]
+
 \begin{document}
 \maketitle
 
@@ -230,7 +232,8 @@ preocupar. Por ejemplo,
 
 Quedará así:
 
-\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+ \begin{center}\rule{0.5\textwidth}{0.1mm}\end{center}
+
 
 \begin{enumerate}
 \item
@@ -246,7 +249,7 @@ Quedará así:
   Tercer ítem
 \end{enumerate}
 
-\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+\begin{center}\rule{0.5\textwidth}{0.1mm}\end{center}
 
 \subsection{Imágenes}\label{imuxe1genes}
 
@@ -257,7 +260,8 @@ imágenes tiene un poco de lío. Lo que debemos saber es lo siguiente:
 \item
   Necesitamos llamar al paquete \lstinline!graphicx! en el preámbulo.
   Para eso escribiremos \lstinline!\usepackage{graphicx}! entre
-  \lstinline!\documentclass! y \lstinline!\begin{document}!
+  \lstinline!\documentclass! y 
+    \lstinline!\begin{document}!
 \item
   Las imágenes se insertan con el comando
   \lstinline!\includegraphics[opciones]{ruta}!
